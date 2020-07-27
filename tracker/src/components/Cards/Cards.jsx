@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 import cx from 'classnames';
 const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) =>{
     if(!confirmed){
-        return("Loading...")
+        return 'Loading...';
     }
 
 
@@ -34,7 +34,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) =>{
                        </CardContent>
                    </Grid>
 
-                   <Grid item component = {Card}  xs= {12} md = {3} className = {cx(styles.card, styles.deaths)}>
+                   <Grid item component = {Card} xs= {12} md = {3} className = {cx(styles.card, styles.deaths)}>
                        <CardContent>
                            <Typography color = "textSecondary" gutterBottom>Death</Typography>
                            <Typography variant = "h5">
