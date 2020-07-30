@@ -38,7 +38,7 @@ const Chart = ({data : {confirmed, deaths, recovered}, country}) =>{
     )
 
     const barChart = (
-        data.confirmed ?(
+        confirmed ?(
             <Bar
             data = {{
                 labels: ['Infected', 'Recovered', 'Deaths'],
@@ -49,7 +49,7 @@ const Chart = ({data : {confirmed, deaths, recovered}, country}) =>{
                         'rgba(0, 255, 0, 0.5)',
                        'rgba(255, 0, 0, 0.5)'
                     ],
-                    data : [confirmed, deaths, recovered]
+                    data : [confirmed.value, deaths.value, recovered.value]
                     
                 }]
 

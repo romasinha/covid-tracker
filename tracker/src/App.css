@@ -2,3 +2,8 @@
   font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
+
+.image{
+  width: 600px;
+  height: 700px;
+}
