@@ -16,7 +16,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) =>{
                        <CardContent>
                            <Typography color = "textSecondary" gutterBottom>Infected</Typography>
                            <Typography variant = "h5">
-                               <CountUp start = {0} end = {confirmed.value} duration = {2.5} separator = ","/>
+                               <CountUp start = {0} end = {confirmed.value} duration = {1.5} separator = ","/>
                            </Typography>
                            <Typography color = "textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                            <Typography variant = "body2">Number of active cases of COVID-19</Typography>
@@ -27,7 +27,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) =>{
                        <CardContent>
                            <Typography color = "textSecondary" gutterBottom>Recovered</Typography>
                            <Typography variant = "h5">
-                           <CountUp start = {0} end = {recovered.value} duration = {2.5} separator = ","/>
+                           <CountUp start = {0} end = {recovered.value} duration = {1.5} separator = ","/>
                            </Typography>
                            <Typography color = "textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                            <Typography variant = "body2">Number of recoveries of COVID-19</Typography>
@@ -38,7 +38,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) =>{
                        <CardContent>
                            <Typography color = "textSecondary" gutterBottom>Death</Typography>
                            <Typography variant = "h5">
-                           <CountUp start = {0} end = {deaths.value} duration = {0.25} separator = ","/>
+                           <CountUp start = {0} end = {deaths.value} duration = {1.5} separator = ","/>
                            </Typography>
                            <Typography color = "textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                            <Typography variant = "body2">Number of deaths of COVID-19</Typography>
